@@ -68,9 +68,6 @@ addItem.on("click", function () {
 });
 
 function DeleteMe(i) {
-  console.log(`#id${i}`);
-  console.log(replaces);
-
   $(`#id${i}`).parent().hide();
 
   replaces[i] = 0;
