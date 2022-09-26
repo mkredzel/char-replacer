@@ -3,8 +3,9 @@ let replaces = [];
 let addItem = $("#addItem");
 let transformText = $("#transformText");
 let message = $("#message");
-
 let trash = $("#delete");
+
+let output;
 
 // click event for add button
 transformText.on("click", function () {
@@ -15,14 +16,13 @@ transformText.on("click", function () {
     return;
   }
 
-  let output;
-
   if (replaces.length > 0) {
     replaces.forEach((el) => {
-      if (el.replaced != 0 && el.replacer != 0) {
-        output = text.replaceAll(el.replaced, el.replacer);
+      if (el != 0) {
+        text = text.replaceAll(el.replaced, el.replacer);
       }
     });
+    output = text;
   } else {
     output = text;
   }
