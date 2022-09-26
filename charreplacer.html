@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marcel's Text Replacer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+  <link rel="icon" type="image/x-icon" href="https://media.wired.com/photos/5f87340d114b38fa1f8339f9/master/w_1600%2Cc_limit/Ideas_Surprised_Pikachu_HD.jpg">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Marcel's Text Replacer</h1>
+    <div class="row">
+      <div class="col-md-2">
+        <label for="text">Text:</label>
+      </div>
+      <div class="col-md-10">
+        <textarea id="text" type="text" placeholder="Enter your text here" rows="4"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <label for="replaced-item">Replace:</label>
+      </div>
+      <div class="col-md-10">
+        <input id="replaced-item" type="text" placeholder="Enter text you want replaced" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <label for="replacer-item">With:</label>
+      </div>
+      <div class="col-md-10">
+        <input id="replacer-item" type="text" placeholder="Enter text you want to be a replacer" />
+      </div>
+    </div>
+    <br>
+    <button type="button" class="btn btn-primary" id="addItem">Add to Replacers</button>
+    <button type="button" class="btn btn-primary" id="transformText">Transform Text</button>
+    <p id="message"></p>
+    <ul class="myList"></ul>
+  </div>
+  <div class="container" id="output-container">
+    <h1>Transformed Text</h1>
+    <div class="row">
+      <div class="col-md-2">
+        <label for="replacer-item">Output:</label>
+      </div>
+      <div class="col-md-10">
+        <textarea id="output" type="text" rows="4" disabled></textarea>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

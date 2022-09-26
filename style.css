@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Allan|Roboto');
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #3f6397;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 5px;
+  max-width: 600px;
+  text-align: center;
+  background: #EEEEEE;
+  border-radius: 10px;
+  margin-top: 100px;
+  box-shadow: 4px 5px 10px #0d0d41;
+}
+
+h1 {
+  margin: 0;
+  color: #6C7A89;
+  font-family: 'Allan', sans-serif;
+  font-size: 50px;
+  padding: 15px;
+}
+
+div {
+  padding: 3px;
+}
+
+#message {
+  color: #D64541;
+}
+
+label {
+  font-weight: 600;
+}
+
+.myList{
+  margin: 0px;
+}
+
+#replaced-item, #replacer-item, #text, #output {
+  width: 450px;
+  border: none;
+  padding: 0 5px;
+}
+
+#output-container {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+li.added {
+  color: #fff;
+  background: #6979be;
+  font-size: 16px;
+  padding: 5px;
+  text-align: center;
+  margin-top: 5px;
+  position: relative;
+  left: -12px;
+  box-shadow: 1px 1px 1px grey;
+  transition: 0.3s;
+}
+
+.fa-trash {
+  color: #791c33;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 6px;
+  margin: 0;
+}
+
+.fa-trash:hover {
+  transform: rotate(360deg);
+  transition: 0.3s;
+  color: #000;
+  font-weight: 700;
+}
