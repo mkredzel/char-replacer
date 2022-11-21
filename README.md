@@ -8,6 +8,6 @@
 
 - GitHub Pages: https://mkredzel.github.io/char-replacer
 
-- AWS S3: https://marcel-kredzel.s3.amazonaws.com/index.html
+- AWS S3: http://marcel-kredzel.s3-website-us-east-1.amazonaws.com
 
 - Netlify: https://beamish-rolypoly-96f57b.netlify.app [![Netlify Status](https://api.netlify.com/api/v1/badges/9c21facb-3e1f-4d40-bc09-a388e654309e/deploy-status)](https://app.netlify.com/sites/beamish-rolypoly-96f57b/deploys)
